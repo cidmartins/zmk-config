@@ -63,7 +63,7 @@
 // | BTCLR|        |     |     |     | VOL_DOWN|     |  F3 | F8  | F9  | F10 |     |  RESET
 //                          | RGUI | SPC |     |     |     | ENT | LALT |
         bindings = <
-                &bt BT_SEL 1 &bt BT_SEL 3 &mkp RCLK &mmv MOVE_UP &mkp LCLK &out OUT_TOG &out OUT_TOG &bt BT_CLR_ALL &kp F4 &kp F5 &kp F6
+                &bt BT_SEL 1 &bt BT_SEL 3 &mkp RCLK &mmv MOVE_UP &mkp LCLK &out OUT_TOG &kp F2 &bt BT_CLR_ALL &kp F4 &kp F5 &kp F6
                 &bt BT_SEL 0 &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &kp C_VOLUME_UP &kp F7 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1 &kp F11 &kp F12
                 &bt BT_CLR &trans &trans &trans &trans &kp C_VOLUME_DOWN &kp F3 &kp F8 &kp F9 &kp F10 &trans &sys_reset
                 &kp RIGHT_GUI &kp SPACE &trans &trans &kp ENTER &kp LEFT_ALT
