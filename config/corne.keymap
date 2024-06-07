@@ -14,7 +14,7 @@
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
-            bindings = <&none>, <&none>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -24,7 +24,7 @@
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             label = "HMR";
-            bindings = <&none>, <&none>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -43,10 +43,10 @@
             //                    | RGUI | SPC | MO1 |     | MO2 | ENT | LALT|
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E          &kp R      &kp T    &bt BT_CLR_ALL  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_SEL 5  &bt BT_CLR     &bt BT_NXT
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D          &kp F      &kp G    &kp H           &kp J         &kp K         &kp L         &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C          &kp V      &kp B    &kp N           &kp M         &kp COMMA     &kp DOT       &kp SLASH      &kp RIGHT_SHIFT
-                                &kp RIGHT_GUI  &kp SPACE  &mo 1    &mo 2           &kp ENTER     &kp LEFT_ALT
+&kp TAB           &kp Q              &kp W                &kp E            &kp R            &kp T    &kp Y  &kp U             &kp I             &kp O                 &kp P                       &kp BACKSPACE
+&kp LEFT_CONTROL  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G    &kp H  &hmr RIGHT_GUI J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON  &kp SINGLE_QUOTE
+&kp LEFT_SHIFT    &kp Z              &kp X                &kp C            &kp V            &kp B    &kp N  &kp M             &kp COMMA         &kp DOT               &kp SLASH                   &kp RIGHT_SHIFT
+                                                          &kp RIGHT_GUI    &kp SPACE        &mo 1    &mo 2  &kp ENTER         &kp LEFT_ALT
             >;
         };
 
