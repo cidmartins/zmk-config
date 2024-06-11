@@ -33,6 +33,22 @@
         };
     };
 
+    macros {
+        right_desktop: right_desktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(RIGHT))>;
+            label = "RIGHT_DESKTOP";
+        };
+
+        left_desktop: left_desktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LEFT_ARROW))>;
+            label = "LEFT_DESKTOP";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -74,10 +90,10 @@
             //                    | RGUI| SPC |     |     |     | ENT | LALT |
 
             bindings = <
-&kp ESCAPE  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BACKSPACE
-&trans      &trans     &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBRC   &kp RBRC  &kp PIPE  &kp GRAVE
-&trans      &kp TILDE  &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBKT   &kp RBKT  &kp BSLH  &kp TILDE
-                               &trans    &trans    &trans       &trans     &trans     &trans
+&kp ESCAPE  &kp EXCL   &kp AT  &kp HASH       &kp DLLR        &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BACKSPACE
+&trans      &trans     &trans  &left_desktop  &right_desktop  &trans       &kp MINUS  &kp EQUAL  &kp LBRC   &kp RBRC  &kp PIPE  &kp GRAVE
+&trans      &kp TILDE  &trans  &trans         &trans          &trans       &kp UNDER  &kp PLUS   &kp LBKT   &kp RBKT  &kp BSLH  &kp TILDE
+                               &trans         &trans          &trans       &trans     &trans     &trans
             >;
         };
 
@@ -89,10 +105,10 @@
             //                          | RGUI | SPC |     |     |     | ENT | LALT |
 
             bindings = <
-&bt BT_SEL 1  &bt BT_SEL 3    &mkp RCLK       &mmv MOVE_UP     &mkp LCLK          &kp F1          &kp F2      &bt BT_CLR_ALL  &kp F4        &kp F5   &kp F6      &bt BT_SEL 0
-&trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_UP    &kp F7          &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1  &kp F11  &kp F12     &bt BT_CLR
-&out OUT_TOG  &trans          &trans          &trans           &kp C_VOLUME_DOWN  &bt BT_SEL 4    &bt BT_NXT  &bt BT_PRV      &bt BT_NXT    &trans   &sys_reset  &kp RIGHT_GUI
-                                              &trans           &trans             &trans          &trans      &trans          &trans
+&bt BT_SEL 1  &bt BT_SEL 3  &mkp RCLK       &mmv MOVE_UP     &mkp LCLK          &kp F1          &kp F2  &kp F3  &kp F4  &kp F5   &kp F6      &kp F10
+&bt BT_PRV    &bt BT_NXT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_UP    &kp F7          &trans  &trans  &trans  &kp F11  &kp F12     &trans
+&out OUT_USB  &out OUT_BLE  &bt BT_CLR      &bt BT_CLR_ALL   &kp C_VOLUME_DOWN  &bt BT_SEL 4    &trans  &trans  &trans  &trans   &sys_reset  &kp RIGHT_GUI
+                                            &trans           &trans             &trans          &trans  &trans  &trans
             >;
         };
     };
