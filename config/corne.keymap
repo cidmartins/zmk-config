@@ -92,6 +92,21 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <17 18>;
         };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <6 7>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <30 31>;
+        };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <18 19>;
+        };
     };
 
     keymap {
