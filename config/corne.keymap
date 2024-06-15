@@ -85,6 +85,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        capslock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <17 18>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -127,8 +136,8 @@
 
             bindings = <
 &kp ESCAPE  &kp EXCL   &kp AT  &kp HASH       &kp DLLR        &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BACKSPACE
-&trans      &trans     &trans  &left_desktop  &right_desktop  &trans       &kp MINUS  &kp EQUAL  &kp LBRC   &kp RBRC  &kp PIPE  &kp GRAVE
-&trans      &kp TILDE  &trans  &trans         &trans          &trans       &kp UNDER  &kp PLUS   &kp LBKT   &kp RBKT  &kp BSLH  &kp TILDE
+&trans      &trans     &trans  &left_desktop  &right_desktop  &trans       &kp MINUS  &kp EQUAL  &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+&trans      &kp TILDE  &trans  &trans         &trans          &trans       &kp UNDER  &kp PLUS   &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
                                &trans         &trans          &trans       &trans     &trans     &trans
             >;
         };
