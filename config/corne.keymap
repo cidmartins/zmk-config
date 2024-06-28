@@ -128,6 +128,11 @@
             bindings = <&tog 5>;
             key-positions = <16 14 3 13>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <16 17>;
+        };
     };
 
     keymap {
