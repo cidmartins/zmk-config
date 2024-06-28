@@ -123,6 +123,11 @@
             key-positions = <11 22 35>;
             layers = <4 0>;
         };
+
+        arrows {
+            bindings = <&tog 5>;
+            key-positions = <16 14 3 13>;
+        };
     };
 
     keymap {
@@ -194,6 +199,15 @@
 &kp TAB    &kp Q   &kp W   &kp E   &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp A   &kp S   &kp D   &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans
                            &kp C   &kp SPACE  &kp LCTRL    &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans    &kp UP    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans    &trans     &trans    &trans  &trans  &trans
             >;
         };
     };
