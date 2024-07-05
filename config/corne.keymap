@@ -130,7 +130,7 @@
         };
 
         col5 {
-            bindings = <&tog 0>;
+            bindings = <&tog 4>;
             key-positions = <0 24 13>;
         };
     };
