@@ -185,7 +185,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans          &trans          &trans        &trans           &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv SCRL_UP  &mmv SCRL_RIGHT  &trans
-                        &trans  &trans  &trans    &mkp RCLK  &mkp LCLK       &mkp MCLK
+                        &trans  &trans  &trans    &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
         };
 
@@ -200,10 +200,10 @@
 
         sym {
             bindings = <
-&trans  &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTRK             &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &trans  &kp CARET  &trans  &trans     &trans     &trans
-&trans  &kp COLON       &kp DOLLAR     &kp PERCENT           &kp CARET              &kp PLUS           &trans  &trans     &trans  &kp GRAVE  &kp TILDE  &trans
-&trans  &kp TILDE       &kp EXCL       &kp AT                &kp HASH               &kp EXCL           &trans  &trans     &trans  &trans     &trans     &trans
-                                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS          &trans  &trans     &trans
+&trans  &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTRK             &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &kp CARET  &trans  &trans  &trans     &trans     &trans
+&trans  &kp COLON       &kp DOLLAR     &kp PERCENT           &kp CARET              &kp PLUS           &trans     &trans  &trans  &kp GRAVE  &kp TILDE  &trans
+&trans  &kp TILDE       &kp EXCL       &kp AT                &kp HASH               &kp EXCL           &trans     &trans  &trans  &trans     &trans     &trans
+                                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS          &trans     &trans  &trans
             >;
         };
 
