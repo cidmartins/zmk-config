@@ -284,10 +284,5 @@
             if-layers = <8 9>;
             then-layer = <10>;
         };
-
-        trilayerb {
-            if-layers = <1 1>;
-            then-layer = <3>;
-        };
     };
 };
