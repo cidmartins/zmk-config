@@ -134,7 +134,7 @@
         };
 
         game {
-            bindings = <&tog 11>;
+            bindings = <&tog 0>;
             key-positions = <11 22 35>;
             layers = <7>;
         };
@@ -273,15 +273,6 @@
 &bt BT_PRV    &bt BT_NXT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_UP    &bootloader    &bootloader  &trans  &trans  &kp F11  &kp F12     &trans
 &out OUT_USB  &out OUT_BLE  &bt BT_CLR      &bt BT_CLR_ALL   &kp C_VOLUME_DOWN  &sys_reset     &sys_reset   &trans  &trans  &trans   &sys_reset  &kp RIGHT_GUI
                                             &trans           &trans             &trans         &trans       &trans  &trans
-            >;
-        };
-
-        game {
-            bindings = <
-&kp F1     &kp N1  &kp N2  &kp N3            &kp N4     &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB    &kp Q   &kp W   &kp E             &kp R      &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp A   &kp S   &kp D             &kp F      &kp G        &trans  &trans  &trans  &trans  &trans  &trans
-                           &kp LEFT_CONTROL  &kp SPACE  &kp LCTRL    &trans  &trans  &trans
             >;
         };
     };
