@@ -149,6 +149,11 @@
             key-positions = <20 13>;
             layers = <5>;
         };
+
+        wasd {
+            bindings = <&tog 14>;
+            key-positions = <35 22 11>;
+        };
     };
 
     keymap {
@@ -274,6 +279,51 @@
 &bt BT_PRV    &bt BT_NXT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp C_VOLUME_UP    &bootloader    &bootloader  &trans  &trans  &kp F11  &kp F12     &trans
 &out OUT_USB  &out OUT_BLE  &bt BT_CLR      &bt BT_CLR_ALL   &kp C_VOLUME_DOWN  &sys_reset     &sys_reset   &trans  &trans  &trans   &sys_reset  &kp RIGHT_GUI
                                             &trans           &trans             &trans         &trans       &trans  &trans
+            >;
+        };
+
+        game {
+            bindings = <
+&trans  &kp N1             &kp N2  &kp N3         &kp N4     &kp N5          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &hml LEFT_SHIFT Q  &kp W   &kp E          &kp R      &kp T           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp A              &kp S   &kp D          &kp F      &kp G           &trans  &trans  &trans  &trans  &trans  &trans
+                                   &lt 13 ESCAPE  &kp SPACE  &lt 12 ENTER    &trans  &trans  &trans
+            >;
+        };
+
+        game2 {
+            bindings = <
+&trans  &kp N6  &kp N7  &trans  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Z   &kp X   &kp C   &kp V   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        game3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        wsad {
+            bindings = <
+&trans  &kp TAB    &kp Q  &kp W    &kp E      &kp R           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &kp A  &kp S    &kp D      &kp F           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL  &kp Z  &kp X    &kp C      &kp V           &trans  &trans  &trans  &trans  &trans  &trans
+                          &kp ESC  &kp SPACE  &lt 15 ENTER    &trans  &trans  &trans
+            >;
+        };
+
+        wsad2 {
+            bindings = <
+&trans  &kp N1        &kp N2  &trans  &kp N3  &kp N4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ALT  &trans  &trans  &trans  &kp T     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_GUI  &kp G   &kp H   &kp J   &kp K     &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
