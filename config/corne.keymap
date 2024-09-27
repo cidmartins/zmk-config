@@ -118,25 +118,10 @@
             key-positions = <18 19>;
         };
 
-        pg_up {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <4 5>;
-        };
-
-        pg_down {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <28 29>;
-        };
-
         game {
             bindings = <&tog 0>;
             key-positions = <11 22 35>;
             layers = <1>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <16 17>;
         };
 
         col5 {
@@ -153,6 +138,11 @@
         wasd {
             bindings = <&tog 14>;
             key-positions = <35 22 11>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <6 7>;
         };
     };
 
