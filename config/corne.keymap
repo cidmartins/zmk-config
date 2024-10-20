@@ -13,7 +13,7 @@
 &lt {
     flavor = "balanced";
     tapping-term-ms = <200>;
-    quick-tap-ms = <25>;
+    quick-tap-ms = <100>;
 };
 
 / {
