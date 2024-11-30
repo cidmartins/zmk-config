@@ -151,9 +151,9 @@
 
         layer_0b {
             bindings = <
-&none  &kp Q            &kp W            &kp E                &kp R                &kp T        &kp Y             &kp U                &kp I            &kp O            &kp P                       &none
-&none  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml_f LEFT_SHIFT D  &hml LEFT_CONTROL F  &kp G        &kp H             &hmr LEFT_CONTROL J  &hmr_f RSHIFT K  &hmr LEFT_ALT L  &hmr LEFT_GUI SINGLE_QUOTE  &none
-&none  &kp Z            &kp X            &kp C                &kp V                &kp B        &kp N             &kp M                &kp COMMA        &kp DOT          &kp SLASH                   &none
+&out OUT_USB  &kp Q            &kp W            &kp E                &kp R                &kp T        &kp Y             &kp U                &kp I            &kp O            &kp P                       &out OUT_USB
+&out OUT_BLE  &hml LEFT_GUI A  &hml LEFT_ALT S  &hml_f LEFT_SHIFT D  &hml LEFT_CONTROL F  &kp G        &kp H             &hmr LEFT_CONTROL J  &hmr_f RSHIFT K  &hmr LEFT_ALT L  &hmr LEFT_GUI SINGLE_QUOTE  &out OUT_BLE
+&sys_reset  &kp Z            &kp X            &kp C                &kp V                &kp B        &kp N             &kp M                &kp COMMA        &kp DOT          &kp SLASH                   &sys_reset
                                          &lt 2 ESCAPE         &lt 3 SPACE          &lt 4 TAB    &sym 5 BACKSPACE  &lt 6 ENTER          &lt 7 DELETE
             >;
         };
