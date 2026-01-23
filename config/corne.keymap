@@ -4,11 +4,12 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     flavor = "balanced";
@@ -202,9 +203,9 @@
 
         sym {
             bindings = <
-&trans  &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTRK             &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &kp CARET  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans     &trans
-&trans  &kp COLON       &kp DOLLAR     &kp PERCENT           &kp CARET              &kp PLUS           &trans     &trans            &trans             &kp GRAVE  &kp TILDE  &trans
-&trans  &kp TILDE       &kp EXCL       &kp AT                &kp HASH               &kp EXCL           &trans     &trans            &trans             &trans     &trans     &trans
+&trans  &kp LEFT_BRACE  &kp AMPERSAND  &kp ASTRK             &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &kp CARET  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans         &trans
+&trans  &kp COLON       &kp DOLLAR     &kp PERCENT           &kp CARET              &kp PLUS           &trans     &trans            &trans             &kp GRAVE  &kp TILDE      &trans
+&trans  &kp TILDE       &kp EXCL       &kp AT                &kp HASH               &kp EXCL           &trans     &trans            &trans             &trans     &kp BACKSLASH  &trans
                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS          &trans     &trans            &trans
             >;
         };
